@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.jq.findapp" android-versionCode="46" ios-CFBundleVersion="0" version="0.9.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>findapp</name>
+	<description>
+		meet like minded spontaneously ·  bluetooth contacting ·  social entertainment · locations · events · buddies · just fun · enjoy life · enjoy findapp
+    </description>
+	<author email="findapp@jq-consulting.de" href="https://findapp.online">
+		findapp team
+    </author>
+	<content src="index.html" />
+	<access origin="*" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<allow-intent href="tel:*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="mailto:*" />
+	<allow-intent href="geo:*" />
+	<allow-navigation href="*" />
+	<preference name="Fullscreen" value="false" />
+	<preference name="BackupWebStorage" value="none" />
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="BackgroundColor" value="0xffffffff" />
+	<preference name="Orientation" value="portrait" />
+	<preference name="SplashScreen" value="none" />
+	<preference name="SplashScreenDelay" value="0" />
+	<preference name="GradlePluginGoogleServicesEnabled" value="true" />
+	<preference name="GradlePluginGoogleServicesVersion" value="4.3.10" />
+	<preference name="cordova.plugins.diagnostic.modules" value="BLUETOOTH LOCATION WIFI CAMERA NOTIFICATIONS" />
+	<preference name="WKWebViewOnly" value="true" />
+	<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+	<feature name="CDVWKWebViewEngine">
+		<param name="ios-package" value="CDVWKWebViewEngine" />
+	</feature>
+	<universal-links>
+		<ios-team-id value="G9H244G768" />
+		<host scheme="https" name="findapp.online" />
+		<host scheme="findapp" name="" event="fb" />
+	</universal-links>
+	<platform name="ios">
+		<hook src="ios_push_entitlement_hack.sh" type="after_platform_add" />
+		<preference name="StatusBarStyle" value="default" />
+		<preference name="deployment-target" value="12.0" />
+
+		<allow-intent href="itms:*" />
+		<allow-intent href="itms-apps:*" />
+
+		<icon height="20" src="images/ios/icon20.png" width="20" />
+		<icon height="29" src="images/ios/icon29.png" width="29" />
+		<icon height="40" src="images/ios/icon40.png" width="40" />
+		<icon height="48" src="images/ios/icon48.png" width="48" />
+		<icon height="50" src="images/ios/icon50.png" width="50" />
+		<icon height="55" src="images/ios/icon55.png" width="55" />
+		<icon height="57" src="images/ios/icon57.png" width="57" />
+		<icon height="58" src="images/ios/icon58.png" width="58" />
+		<icon height="60" src="images/ios/icon60.png" width="60" />
+		<icon height="72" src="images/ios/icon72.png" width="72" />
+		<icon height="76" src="images/ios/icon76.png" width="76" />
+		<icon height="80" src="images/ios/icon80.png" width="80" />
+		<icon height="87" src="images/ios/icon87.png" width="87" />
+		<icon height="88" src="images/ios/icon88.png" width="88" />
+		<icon height="100" src="images/ios/icon100.png" width="100" />
+		<icon height="114" src="images/ios/icon114.png" width="114" />
+		<icon height="120" src="images/ios/icon120.png" width="120" />
+		<icon height="144" src="images/ios/icon144.png" width="144" />
+		<icon height="152" src="images/ios/icon152.png" width="152" />
+		<icon height="167" src="images/ios/icon167.png" width="167" />
+		<icon height="172" src="images/ios/icon172.png" width="172" />
+		<icon height="180" src="images/ios/icon180.png" width="180" />
+		<icon height="196" src="images/ios/icon196.png" width="196" />
+		<icon height="1024" src="images/ios/icon1024.png" width="1024" />
+
+		<splash src="images/ios/Default@1x~universal~anyany.png" />
+		<splash src="images/ios/Default@2x~universal~anyany.png" />
+		<splash src="images/ios/Default@3x~universal~anyany.png" />
+
+		<edit-config target="BGTaskSchedulerPermittedIdentifiers" file="*-Info.plist" mode="merge" overwrite="true">
+			<array>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			</array>
+		</edit-config>
+		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Location access is used to show places and people in your vicinity.</string>
+		</edit-config>
+		<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Location access is used to show places and people in your vicinity.</string>
+		</edit-config>
+		<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Location access is used to show places and people in your vicinity.</string>
+		</edit-config>
+		<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Photo library access allows you to select pictures for chats or your profile.</string>
+		</edit-config>
+		<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Camera access allows you to take new pictures for chats or your profile.</string>
+		</edit-config>
+		<edit-config target="NSBluetoothPeripheralUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Bluetooth is used for Bluetooth Matching of Buddies in your immediate surrounding. You may turn it off in your settings.</string>
+		</edit-config>
+		<edit-config target="NSBluetoothAlwaysUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			<string>Bluetooth is used for Bluetooth Matching of Buddies in your immediate surrounding. You may turn it off in your settings.</string>
+		</edit-config>
+		<edit-config target="UIBackgroundModes" file="*-Info.plist" mode="merge" overwrite="true">
+			<array>
+				<string>bluetooth-central</string>
+				<string>bluetooth-peripheral</string>
+				<string>remote-notification</string>
+				<string>processing</string>
+			</array>
+		</edit-config>
+		<edit-config target="CBAdvertisementDataServiceUUIDsKey" file="*-Info.plist" mode="merge" overwrite="true">
+			<array>
+				<string>e8a98f86-f973-442b-a099-b0b2d2c4f20e</string>
+				<string>1e6153b0-9c7e-47e9-a14a-c917fad22e41</string>
+			</array>
+		</edit-config>
+		<edit-config target="CBAdvertisementDataOverflowServiceUUIDsKey" file="*-Info.plist" mode="merge" overwrite="true">
+			<array>
+				<string>e8a98f86-f973-442b-a099-b0b2d2c4f20e</string>
+				<string>1e6153b0-9c7e-47e9-a14a-c917fad22e41</string>
+			</array>
+		</edit-config>
+		<resource-file src="GoogleService-Info.plist" />
+	</platform>
+	<platform name="android">
+		<allow-intent href="market:*" />
+
+		<preference name="AndroidLaunchMode" value="singleTop" />
+		<preference name="android-minSdkVersion" value="28" />
+		<preference name="android-targetSdkVersion" value="30" />
+		<preference name="AndroidLaunchMode" value="singleInstance" />
+		<preference name="loadUrlTimeoutValue" value="700000" />
+		<preference name="AndroidXEnabled" value="true" />
+
+		<config-file parent="/manifest" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.BLUETOOTH" />
+			<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+			<uses-permission android:name="android.permission.CAMERA" />
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<queries>
+				<intent>
+					<action android:name="android.support.customtabs.action.CustomTabsService" />
+				</intent>
+			</queries>
+		</config-file>
+		<config-file parent="/manifest/application" target="AndroidManifest.xml">
+			<uses-library android:name="org.apache.http.legacy" android:required="false" />
+		</config-file>
+
+		<icon density="ldpi" foreground="images/android/icon36.png" background="images/android/icon36.png" />
+		<icon density="mdpi" foreground="images/android/icon48.png" background="images/android/icon48.png" />
+		<icon density="hdpi" foreground="images/android/icon72.png" background="images/android/icon72.png" />
+		<icon density="xhdpi" foreground="images/android/icon96.png" background="images/android/icon96.png" />
+		<icon density="xxhdpi" foreground="images/android/icon144.png" background="images/android/icon144.png" />
+		<icon density="xxxhdpi" foreground="images/android/icon192.png" background="images/android/icon192.png" />
+
+		<resource-file src="google-services.json" target="app/google-services.json" />
+	</platform>
+</widget>
