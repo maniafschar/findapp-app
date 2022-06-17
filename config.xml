@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.findapp" android-versionCode="51" ios-CFBundleVersion="0" version="0.9.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>findapp</name>
+<widget id="com.jq.spontifyme" android-versionCode="1" ios-CFBundleVersion="0" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>spontify.me</name>
 	<description>
-		meet like minded spontaneously ·  bluetooth contacting ·  social entertainment · locations · events · buddies · just fun · enjoy life · enjoy findapp
+		meet like minded spontaneously ·  bluetooth contacting ·  social entertainment · locations · events · buddies · just fun · enjoy life · enjoy spontify.me
     </description>
-	<author email="findapp@jq-consulting.de" href="https://findapp.online">
-		findapp team
+	<author email="spontify.me@jq-consulting.de" href="https://spontify.me">
+		spontify.me team
     </author>
 	<content src="index.html" />
 	<access origin="*" />
@@ -33,8 +33,8 @@
 	</feature>
 	<universal-links>
 		<ios-team-id value="G9H244G768" />
-		<host scheme="https" name="findapp.online" />
-		<host scheme="findapp" name="" event="fb" />
+		<host scheme="https" name="spontify.me" />
+		<host scheme="spontifyme" name="" event="fb" />
 	</universal-links>
 	<platform name="ios">
 		<hook src="ios_push_entitlement_hack.sh" type="after_platform_add" />
