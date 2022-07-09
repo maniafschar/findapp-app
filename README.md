@@ -1,8 +1,8 @@
-findapp &middot; app
+spontify.me &middot; app
 ==============================================================================
 
 By [**Mani Afschar Yazdi**](https://afschar-yazdi.de)
 
 ------------------------------------------------------------------------------
 
-findapp app is the **Ccordova** project for packing the findapp web frontend to native ios/android apps.
+spontify.me app is the **Ccordova** project for packing the spontify.me web frontend to native ios/android apps.
