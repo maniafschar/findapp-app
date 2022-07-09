@@ -1,6 +1,6 @@
 {
-  "name": "findapp",
-  "displayName": "findapp",
+  "name": "spontify.me",
+  "displayName": "spontify.me",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -84,8 +84,8 @@
       "cordova-plugin-ble-peripheral": {}
     },
     "platforms": [
-      "android",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
