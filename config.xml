@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.spontifyme" android-versionCode="16" ios-CFBundleVersion="0" version="0.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.jq.spontifyme" android-versionCode="17" ios-CFBundleVersion="0" version="0.2.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>spontify.me</name>
 	<description>
 		meet like minded spontaneously ·  bluetooth contacting ·  social entertainment · locations · events · buddies · enjoy life · enjoy spontify.me
@@ -124,7 +124,7 @@
 
 		<preference name="AndroidLaunchMode" value="singleTop" />
 		<preference name="android-minSdkVersion" value="28" />
-		<preference name="android-targetSdkVersion" value="30" />
+		<preference name="android-targetSdkVersion" value="31" />
 		<preference name="AndroidLaunchMode" value="singleInstance" />
 		<preference name="loadUrlTimeoutValue" value="700000" />
 		<preference name="AndroidXEnabled" value="true" />
