@@ -1,6 +1,6 @@
 {
-  "name": "skillvents",
-  "displayName": "skillvents",
+  "name": "fanclub",
+  "displayName": "fanclub",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@havesource/cordova-plugin-push": "^3.0.1",
     "cordova": "^11.0.0",
-    "cordova-android": "^10.1.2",
+    "cordova-android": "^12.0.0",
     "cordova-custom-config": "^5.1.1",
     "cordova-ios": "^6.3.0",
     "cordova-plugin-add-swift-support": "^2.0.2",
@@ -81,8 +81,8 @@
       "cordova-plugin-android-permissions": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
