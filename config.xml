@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client6" android-versionCode="36" ios-CFBundleVersion="0" version="0.5.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.jq.fanclub.client6" android-versionCode="38" ios-CFBundleVersion="1" version="0.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Offline Poker</name>
-	<description>Offline Poker</description>
+	<description>Offline Poker · Events · Pokerfaces</description>
 	<author email="support@offline-poker.com" href="https://offline-poker.com">Offline Poker Team</author>
 	<content src="index.html" />
 	<access origin="*" />
@@ -37,6 +37,7 @@
 	<platform name="ios">
 		<preference name="StatusBarStyle" value="default" />
 		<preference name="deployment-target" value="12.0" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
 
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
@@ -70,28 +71,30 @@
 		<splash src="images/ios/Default@2x~universal~anyany.png" />
 		<splash src="images/ios/Default@3x~universal~anyany.png" />
 
+		<resource-file src="GoogleService-Info.plist" />
+
 		<edit-config target="BGTaskSchedulerPermittedIdentifiers" file="*-Info.plist" mode="merge" overwrite="true">
 			<array>
 				<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 			</array>
 		</edit-config>
 		<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Location access is used to show places and people in your vicinity.</string>
+			<string>Location access is used to show events, people, and locations in your vicinity.</string>
 		</edit-config>
 		<edit-config target="NSLocationAlwaysAndWhenInUseUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Location access is used to show places and people in your vicinity.</string>
+			<string>Location access is used to show events, people, and locations in your vicinity.</string>
 		</edit-config>
 		<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Location access is used to show places and people in your vicinity.</string>
+			<string>Location access is used to show events, people, and locations in your vicinity.</string>
 		</edit-config>
 		<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Photo library access allows you to select pictures for chats or your profile.</string>
+			<string>Photo library access allows you to select pictures for chats or your profile settings.</string>
 		</edit-config>
 		<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Camera access allows you to take new pictures for chats or your profile.</string>
+			<string>Access to camera allows you to take new pictures for chats, your profile settings and make video calls to other people.</string>
 		</edit-config>
 		<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			<string>Access to microphone to make calls.</string>
+			<string>Access to microphone is used to make video calls to other people.</string>
 		</edit-config>
 		<edit-config target="NSBluetoothPeripheralUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
 			<string>Bluetooth is used for Bluetooth Matching of Buddies in your immediate surrounding. You may turn it off in your settings.</string>
