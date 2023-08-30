@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client6" android-versionCode="38" ios-CFBundleVersion="1" version="0.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-	<name>Offline Poker</name>
-	<description>Offline Poker · Events · Pokerfaces</description>
-	<author email="support@offline-poker.com" href="https://offline-poker.com">Offline Poker Team</author>
+<widget id="com.jq.fanclub.client7" android-versionCode="39" ios-CFBundleVersion="0" version="0.5.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<name>Fanclub</name>
+	<description>Fanclub · Events · Buddies</description>
+	<author email="support@fan-club.online" href="https://alpenherz.fan-club.online">Fanclub Team</author>
 	<content src="index.html" />
 	<access origin="*" />
 	<allow-intent href="http://*/*" />
@@ -31,8 +31,8 @@
 	</feature>
 	<universal-links>
 		<ios-team-id value="G9H244G768" />
-		<host scheme="https" name="offline-poker.com" />
-		<host scheme="offline-poker" name="" event="fb" />
+		<host scheme="https" name="alpenherz.fan-club.online" />
+		<host scheme="alpenherz.fan-club" name="" event="fb" />
 	</universal-links>
 	<platform name="ios">
 		<preference name="StatusBarStyle" value="default" />
@@ -119,7 +119,7 @@
 		<allow-intent href="market:*" />
 
 		<preference name="AndroidLaunchMode" value="singleTop" />
-		<preference name="android-minSdkVersion" value="28" />
+		<preference name="android-minSdkVersion" value="33" />
 		<preference name="android-targetSdkVersion" value="33" />
 		<preference name="AndroidLaunchMode" value="singleInstance" />
 		<preference name="loadUrlTimeoutValue" value="700000" />
