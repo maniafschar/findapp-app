@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client7" android-versionCode="39" ios-CFBundleVersion="0" version="0.5.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.jq.fanclub.client4" android-versionCode="40" ios-CFBundleVersion="0" version="0.5.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Fanclub</name>
-	<description>Fanclub · Events · Buddies</description>
-	<author email="support@fan-club.online" href="https://alpenherz.fan-club.online">Fanclub Team</author>
+	<description>FC Bayern Total · Fanclub · Events · Buddies</description>
+	<author email="support@fan-club.online" href="https://fcbayerntotal.fan-club.online">FC Bayern Total · Fanclub Team</author>
 	<content src="index.html" />
 	<access origin="*" />
 	<allow-intent href="http://*/*" />
@@ -31,8 +31,8 @@
 	</feature>
 	<universal-links>
 		<ios-team-id value="G9H244G768" />
-		<host scheme="https" name="alpenherz.fan-club.online" />
-		<host scheme="alpenherz.fan-club" name="" event="fb" />
+		<host scheme="https" name="fcbayerntotal.fan-club.online" />
+		<host scheme="fcbayerntotal.fan-club" name="" event="fb" />
 	</universal-links>
 	<platform name="ios">
 		<preference name="StatusBarStyle" value="default" />
@@ -143,6 +143,8 @@
 		<config-file parent="/manifest/application" target="AndroidManifest.xml">
 			<uses-library android:name="org.apache.http.legacy" android:required="false" />
 		</config-file>
+
+        <hook src="stripAndroidManifestPermissions.js" type="after_prepare" />
 
 		<icon density="ldpi" foreground="images/android/36.png" background="images/android/36.png" />
 		<icon density="mdpi" foreground="images/android/48.png" background="images/android/48.png" />
