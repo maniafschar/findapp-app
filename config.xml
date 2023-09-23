@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client4" android-versionCode="40" ios-CFBundleVersion="0" version="0.5.4" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.jq.fanclub.client4" android-versionCode="41" ios-CFBundleVersion="0" version="0.5.5" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Fanclub</name>
 	<description>FC Bayern Total · Fanclub · Events · Buddies</description>
 	<author email="support@fan-club.online" href="https://fcbayerntotal.fan-club.online">FC Bayern Total · Fanclub Team</author>
@@ -119,7 +119,7 @@
 		<allow-intent href="market:*" />
 
 		<preference name="AndroidLaunchMode" value="singleTop" />
-		<preference name="android-minSdkVersion" value="33" />
+		<preference name="android-minSdkVersion" value="29" />
 		<preference name="android-targetSdkVersion" value="33" />
 		<preference name="AndroidLaunchMode" value="singleInstance" />
 		<preference name="loadUrlTimeoutValue" value="700000" />
