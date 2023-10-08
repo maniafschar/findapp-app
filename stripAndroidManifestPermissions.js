@@ -48,6 +48,16 @@ module.exports = function (context) {
 		}
 		fs.writeFileSync(manifestPath, androidManifest);
 	}
+	const toolsAttribute = "xmlns:tools=\"http://schemas.android.com/tools\"";
+	const manifestOpen = "<manifest";
+
+	const manifestPath2 = path.join(context.opts.projectRoot, 'platforms/android/app/src/main/AndroidManifest.xml');
+	let manifest = fs.readFileSync(manifestPath2).toString();
+
+	if (manifest.indexOf(toolsAttribute) == -1) {
+		manifest = manifest.replace(manifestOpen, manifestOpen + " " + toolsAttribute + " ");
+		fs.writeFileSync(manifestPath2, manifest, 'utf8');
+	}
 };
 
 function usesPermissionsRegex(permission) {
