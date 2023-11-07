@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client4" android-versionCode="50" ios-CFBundleVersion="0" version="0.6.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
+<widget id="com.jq.fanclub.client4" android-versionCode="51" ios-CFBundleVersion="0" version="0.6.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
 	<name>Fanclub</name>
 	<description>FC Bayern Total · Fanclub · Events · Fans</description>
 	<author email="support@fan-club.online" href="https://fcbayerntotal.fan-club.online">FC Bayern Total · Fanclub Team</author>
