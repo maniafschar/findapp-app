@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="undefined" android-versionCode="52" ios-CFBundleVersion="0" version="0.6.5" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
-	<name>test</name>
-	<description>test · Events · Buddies</description>
-	<author email="undefined" href="http://localhost:9000">test Team</author>
+<widget id="com.jq.fanclub.client4" android-versionCode="53" ios-CFBundleVersion="0" version="0.6.5" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
+	<name>Fanclub</name>
+	<description>FC Bayern Total · Fanclub · Events · Fans</description>
+	<author email="support@fan-club.online" href="https://fcbayerntotal.fan-club.online">FC Bayern Total · Fanclub Team</author>
 	<content src="index.html" />
 	<access origin="*" />
 	<allow-intent href="http://*/*" />
@@ -31,8 +31,8 @@
 	</feature>
 	<universal-links>
 		<ios-team-id value="G9H244G768" />
-		<host scheme="https" name="ocalhost:9000" />
-		<host scheme="http://l" name="" event="fb" />
+		<host scheme="https" name="fcbayerntotal.fan-club.online" />
+		<host scheme="fcbayerntotal.fan-club" name="" event="fb" />
 	</universal-links>
 	<platform name="ios">
 		<preference name="StatusBarStyle" value="default" />
