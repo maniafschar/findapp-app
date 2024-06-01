@@ -14,9 +14,10 @@
   "license": "",
   "devDependencies": {
     "cordova": "^12.0.0",
-    "cordova-android": "^12.0.1",
+    "cordova-android": "^13.0.0",
     "cordova-custom-config": "^5.1.1",
-    "cordova-ios": "^7.0.1",
+    "cordova-ios": "^7.1.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
     "cordova-plugin-advanced-background-mode": "^1.1.1",
     "cordova-plugin-android-permissions": "^1.1.5",
     "cordova-plugin-androidx": "^3.0.0",
@@ -26,12 +27,15 @@
     "cordova-plugin-device": "^2.0.3",
     "cordova-plugin-device-orientation": "^3.0.0",
     "cordova-plugin-file": "^8.0.1",
+    "cordova-plugin-firebase-analytics": "^8.0.0",
     "cordova-plugin-firebase-messaging": "^8.0.1",
     "cordova-plugin-geolocation": "^5.0.0",
     "cordova-plugin-inappbrowser": "^6.0.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-safariviewcontroller": "^2.0.0",
     "cordova-plugin-sign-in-with-apple": "^0.1.2",
     "cordova-plugin-statusbar": "^4.0.0",
+    "cordova-plugin-wkwebview-file-xhr": "^3.1.1",
     "cordova-plugin-x-socialsharing": "^6.0.4",
     "cordova-support-android-plugin": "~2.0.4",
     "cordova-support-google-services": "^1.4.1",
@@ -41,17 +45,20 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-device": {},
-      "cordova-plugin-device-orientation": {},
       "cordova-plugin-file": {
         "ANDROIDX_WEBKIT_VERSION": "1.4.0"
       },
+      "cordova-plugin-device-orientation": {},
       "cordova-plugin-advanced-background-mode": {},
       "cordova-plugin-camera": {
         "ANDROIDX_CORE_VERSION": "1.6.+"
       },
+      "cordova-plugin-wkwebview-file-xhr": {},
+      "cordova-plugin-safariviewcontroller": {},
       "cordova-plugin-geolocation": {
         "GPS_REQUIRED": "true"
       },
+      "cordova-plugin-add-swift-support": {},
       "cordova-custom-config": {},
       "cordova-plugin-android-permissions": {},
       "cordova-plugin-androidx-adapter": {},
@@ -61,6 +68,12 @@
         "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly."
       },
       "cordova-support-google-services": {},
+      "cordova-plugin-firebase-analytics": {
+        "ANALYTICS_COLLECTION_ENABLED": "true",
+        "AUTOMATIC_SCREEN_REPORTING_ENABLED": "true",
+        "ANDROID_FIREBASE_BOM_VERSION": "32.5.0",
+        "IOS_FIREBASE_POD_VERSION": "10.17.0"
+      },
       "cordova-plugin-firebase-messaging": {
         "ANDROID_FIREBASE_BOM_VERSION": "32.5.0",
         "IOS_FIREBASE_POD_VERSION": "10.17.0"
@@ -76,8 +89,8 @@
       }
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }
