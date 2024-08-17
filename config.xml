@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.spontifyme" android-versionCode="57" ios-CFBundleVersion="0" version="0.6.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
-	<name>test</name>
-	<description>test · Events · Buddies</description>
-	<author email="undefined" href="http://localhost:9000">test Team</author>
+<widget id="com.jq.fanclub.client4" android-versionCode="58" ios-CFBundleVersion="0" version="0.6.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
+	<name>Fanclub</name>
+	<description>Fanclub · Events · Fans</description>
+	<author email="support@fan-club.online" href="https://fan-club.online">Fanclub Team</author>
 	<content src="index.html" />
 	<access origin="*" />
 	<allow-intent href="http://*/*" />
@@ -31,8 +31,8 @@
 	</feature>
 	<universal-links>
 		<ios-team-id value="G9H244G768" />
-		<host scheme="https" name="ocalhost:9000" />
-		<host scheme="http://l" name="" event="fb" />
+		<host scheme="https" name="fan-club.online" />
+		<host scheme="fan-club" name="" event="fb" />
 	</universal-links>
 	<platform name="ios">
 		<preference name="StatusBarStyle" value="default" />
@@ -120,14 +120,16 @@
 		<config-file target="*-Release.plist" parent="aps-environment">
 			<string>production</string>
 		</config-file>
-		<config-file target="*-Debug.plist" parent="applesignin">
+		<config-file target="*-Debug.plist" parent="com.apple.developer.associated-domains">
 			<array>
-				<string>Default</string>
+				<string>applinks:fan-club.online</string>
+				<string>applinks:</string>
 			</array>
 		</config-file>
-		<config-file target="*-Release.plist" parent="applesignin">
+		<config-file target="*-Release.plist" parent="com.apple.developer.associated-domains">
 			<array>
-				<string>Default</string>
+				<string>applinks:fan-club.online</string>
+				<string>applinks:</string>
 			</array>
 		</config-file>
 	</platform>
