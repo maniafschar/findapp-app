@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.jq.fanclub.client4" android-versionCode="58" ios-CFBundleVersion="0" version="0.6.9" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
+<widget id="com.jq.fanclub.client4" android-versionCode="61" ios-CFBundleVersion="0" version="0.7.2" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:tools="http://schemas.android.com/tools">
 	<name>Fanclub</name>
 	<description>Fanclub · Events · Fans</description>
 	<author email="support@fan-club.online" href="https://fan-club.online">Fanclub Team</author>
@@ -138,7 +138,7 @@
 
 		<preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
 		<preference name="android-minSdkVersion" value="28" />
-		<preference name="android-targetSdkVersion" value="33" />
+		<preference name="android-targetSdkVersion" value="34" />
 		<preference name="AndroidLaunchMode" value="singleInstance" />
 		<preference name="loadUrlTimeoutValue" value="700000" />
 		<preference name="AndroidXEnabled" value="true" />
